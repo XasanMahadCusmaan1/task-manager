@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Data-Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <h1>Personal Task Manager</h1>
+    <div class="app">
+        <div class="app_header">
+            <div>
+                <input type="text" name="addInput" id="input" placeholder="Type Task">
+                <button id="addBtn" type="button">Add Task</button>
+            </div>
+            <select name="filter" id="filter-select">
+                <option value="">Fillter</option>
+                <hr>
+                <option value="showAll">Show All</option>
+                <option value="showCompleted">Show Completed</option>
+                <option value="showUnfinished">Show Unfinished</option>
+            </select>
+            <button id="clearBtn" type="button">Clear Tasks</button>
+        </div>
+        <ul class="app_data">
+
+        </ul>
+    </div>
+</body>
+
+</html>

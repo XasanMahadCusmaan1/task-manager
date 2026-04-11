@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    --primmary-font: 'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
+    --secondary-font: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+}
+
+body {
+    font-family: var(--primmary-font);
+    padding: 1em;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app {
+    min-width: 600px;
+    max-width: 700px;
+}
+
+.app_header {
+    margin-block-start: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.app_header #input {
+    font-size: 1.2rem;
+    padding: .2em;
+    border: 1.5px solid black;
+    font-family: var(--secondary-font);
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        font-size: 1rem;
+    }
+}
+
+.app_header #addBtn {
+    font-size: 1.1rem;
+    padding: .25em .3em;
+    margin-inline-start: .2rem;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.app_header #filter-select {
+    font-size: 1.1rem;
+    font-family: var(--secondary-font);
+
+    & option {
+        cursor: pointer;
+    }
+}
+
+#clearBtn{
+    padding: .2em .5em;
+    cursor: pointer;
+    color: red;
+}
+
+.app .app_data {
+    margin-block-start: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.app .app_data li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: .5rem;
+    cursor: pointer;
+    font-family: var(--secondary-font);
+    box-shadow: 3px 3px 2px rgb(230, 123, 123);
+
+    & small input {
+        margin-inline-start: .3rem;
+        cursor: pointer;
+    }
+
+    & strong {
+        color: rgb(230, 123, 123);
+        font-family: var(--primmary-font);
+    }
+}
+
+
+.highlight {
+    text-decoration: line-through;
+}
